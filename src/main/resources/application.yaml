@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: ddd_project
+    name: back
   profiles:
     active: dev
   output:
