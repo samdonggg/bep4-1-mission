@@ -22,9 +22,9 @@ public class OrderItem extends BaseIdAndTime {
 
     private String productName;
 
-    private long price;
+    private long price; // 원래 가격
 
-    private long salePrice;
+    private long salePrice; // 판매 가격
 
     private double payoutRate = MarketPolicy.PRODUCT_PAYOUT_RATE;
 
