@@ -1,6 +1,5 @@
 package com.back.boundedContext.market.domain;
 
-
 import com.back.global.jpa.entity.BaseManualIdAndTime;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -35,5 +34,9 @@ public class Cart extends BaseManualIdAndTime {
         CartItem cartItem = new CartItem(this, product);
         this.getItems().add(cartItem);
         this.itemsCount++;
+    }
+
+    public void clearItems() {
+        this.getItems().clear();
     }
 }
